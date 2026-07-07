@@ -1,0 +1,32 @@
+.category-bar{
+    display:flex;
+    gap:12px;
+    padding:15px;
+    overflow-x:auto;
+    background:#0f0f0f;
+    border-bottom:1px solid #303030;
+}
+
+.category-bar::-webkit-scrollbar{
+    display:none;
+}
+
+.category-bar button{
+    border:none;
+    background:#272727;
+    color:white;
+    padding:8px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    white-space:nowrap;
+    font-size:14px;
+}
+
+.category-bar button:hover{
+    background:#3f3f3f;
+}
+
+.category-bar .active{
+    background:white;
+    color:black;
+}
