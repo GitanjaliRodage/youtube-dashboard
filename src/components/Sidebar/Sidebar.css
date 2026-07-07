@@ -1,8 +1,11 @@
 .sidebar{
-    width:220px;
+    width:240px;
     background:#181818;
     color:white;
-    height:100vh;
+    height:calc(100vh - 65px);
+    overflow-y:auto;
+    position:sticky;
+    top:65px;
     padding-top:20px;
 }
 
