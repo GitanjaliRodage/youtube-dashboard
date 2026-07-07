@@ -1,32 +1,32 @@
 import "./VideoCard.css";
 
-function VideoCard() {
+function VideoCard({ video }) {
   return (
     <div className="video-card">
 
       <img
         className="thumbnail"
-        src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg"
-        alt="thumbnail"
+        src={video.thumbnail}
+        alt={video.title}
       />
 
       <div className="video-info">
 
         <img
           className="channel-logo"
-          src="https://yt3.googleusercontent.com/ytc-placeholder=s88-c-k-c0x00ffffff-no-rj"
-          alt="channel"
+          src={video.channelLogo}
+          alt={video.channel}
         />
 
         <div className="video-details">
 
-          <h4>
-            Learn React JS Complete Course
-          </h4>
+          <h4>{video.title}</h4>
 
-          <p>CodeWithHarry</p>
+          <p>{video.channel}</p>
 
-          <p>2.3M views • 3 months ago</p>
+          <p>
+            {video.views} • {video.time}
+          </p>
 
         </div>
 
