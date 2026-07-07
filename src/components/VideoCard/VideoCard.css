@@ -1,0 +1,33 @@
+.video-card{
+    width:340px;
+    cursor:pointer;
+}
+
+.thumbnail{
+    width:100%;
+    border-radius:12px;
+}
+
+.video-info{
+    display:flex;
+    margin-top:10px;
+}
+
+.channel-logo{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    margin-right:12px;
+}
+
+.video-details h4{
+    color:white;
+    font-size:16px;
+    margin-bottom:6px;
+}
+
+.video-details p{
+    color:#aaaaaa;
+    font-size:14px;
+    margin:2px 0;
+}

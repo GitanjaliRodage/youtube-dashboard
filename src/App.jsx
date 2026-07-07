@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar/Navbar";
 import Sidebar from "./components/Sidebar/Sidebar";
 import CategoryBar from "./components/CategoryBar/CategoryBar";
+import Home from "./pages/Home/Home";
 
 function App() {
   return (
@@ -8,23 +9,19 @@ function App() {
       <Navbar />
 
       <div style={{ display: "flex" }}>
+
         <Sidebar />
 
         <div style={{ flex: 1 }}>
+
           <CategoryBar />
 
-          <div
-            style={{
-              color: "white",
-              padding: "30px"
-            }}
-          >
-            Video Grid Coming Soon...
-          </div>
+          <Home />
 
         </div>
 
       </div>
+
     </>
   );
 }
