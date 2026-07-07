@@ -1,38 +1,53 @@
 import "./VideoCard.css";
+import { Link } from "react-router-dom";
 
 function VideoCard({ video }) {
+
   return (
-    <div className="video-card">
+    <Link 
+      to={`/video/${video.id}`} 
+      className="video-link"
+    >
 
-      <img
-        className="thumbnail"
-        src={video.thumbnail}
-        alt={video.title}
-      />
-
-      <div className="video-info">
+      <div className="video-card">
 
         <img
-          className="channel-logo"
-          src={video.channelLogo}
-          alt={video.channel}
+          className="thumbnail"
+          src={video.snippet.thumbnails.medium.url}
+          alt={video.snippet.title}
         />
 
-        <div className="video-details">
+        <div className="video-info">
 
-          <h4>{video.title}</h4>
+          <img
+            className="channel-logo"
+            src={
+              video.snippet.thumbnails.default.url
+            }
+            alt="channel"
+          />
 
-          <p>{video.channel}</p>
+          <div className="video-details">
 
-          <p>
-            {video.views} • {video.time}
-          </p>
+            <h4>
+              {video.snippet.title}
+            </h4>
+
+            <p>
+              {video.snippet.channelTitle}
+            </p>
+
+            <p>
+              {video.statistics?.viewCount || 0} views
+            </p>
+
+          </div>
 
         </div>
 
       </div>
 
-    </div>
+    </Link>
   );
 }
 

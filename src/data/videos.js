@@ -1,6 +1,6 @@
 const videos = [
   {
-    id: 1,
+    id: "bMknfKXIFA8",
     title: "Learn React JS Full Course",
     channel: "CodeWithHarry",
     views: "2.3M views",
@@ -9,7 +9,7 @@ const videos = [
     channelLogo: "https://yt3.googleusercontent.com/ytc-AIdro_mLhZ5r4q=s88-c-k-c0x00ffffff-no-rj"
   },
   {
-    id: 2,
+    id: "W6NZfCO5SIk",
     title: "JavaScript Crash Course",
     channel: "Programming with Mosh",
     views: "1.5M views",
@@ -18,7 +18,7 @@ const videos = [
     channelLogo: "https://yt3.googleusercontent.com/ytc-AIdro_n=s88-c-k-c0x00ffffff-no-rj"
   },
   {
-    id: 3,
+    id: "w7ejDZ8SWv8",
     title: "React Projects for Beginners",
     channel: "Traversy Media",
     views: "850K views",

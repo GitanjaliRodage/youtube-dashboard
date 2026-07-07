@@ -1,3 +1,9 @@
+.video-link{
+    text-decoration:none;
+    color:inherit;
+}
+
+
 .video-card{
     width:100%;
     cursor:pointer;

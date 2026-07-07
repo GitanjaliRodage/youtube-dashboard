@@ -1,0 +1,23 @@
+.watch-page{
+    padding:25px;
+    color:white;
+    background:#0f0f0f;
+    min-height:100vh;
+}
+
+.video-player iframe{
+    border:none;
+    border-radius:12px;
+}
+
+.video-content{
+    margin-top:20px;
+}
+
+.video-content h2{
+    margin-bottom:10px;
+}
+
+.video-content h3{
+    margin-top:20px;
+}
