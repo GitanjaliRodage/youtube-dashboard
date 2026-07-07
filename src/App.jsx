@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar/Navbar";
+
 function App() {
   return (
-    <div>
-      <h1>YouTube Dashboard</h1>
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 }
 

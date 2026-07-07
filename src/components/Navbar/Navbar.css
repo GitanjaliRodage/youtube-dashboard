@@ -1,0 +1,52 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#202020;
+    color:white;
+    padding:12px 20px;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    color:red;
+}
+
+.nav-center{
+    display:flex;
+    align-items:center;
+}
+
+.search-input{
+    width:400px;
+    padding:10px;
+    border:none;
+    outline:none;
+}
+
+.search-btn{
+    padding:10px 15px;
+    cursor:pointer;
+    border:none;
+    background:#3a3a3a;
+    color:white;
+}
+
+.icon{
+    font-size:22px;
+    cursor:pointer;
+}
+
+.mic{
+    margin-left:15px;
+}
+
+.profile{
+    font-size:32px;
+    cursor:pointer;
+}
