@@ -1,13 +1,93 @@
-import "./Navbar.css";
-import { MdMenu } from "react-icons/md";
-
-function Navbar() {
-  return (
-    <nav className="navbar">
-      <MdMenu style={{ color: "white", fontSize: "30px" }} />
-      <h2 style={{ color: "white" }}>YouTube</h2>
-    </nav>
-  );
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-export default Navbar;
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:70px;
+    background:#212121;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 20px;
+    z-index:1000;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.menu-icon{
+    color:white;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.youtube-icon{
+    color:red;
+    font-size:34px;
+}
+
+.nav-left h2{
+    color:white;
+    font-size:28px;
+    font-weight:600;
+}
+
+.nav-center{
+    display:flex;
+    align-items:center;
+    width:45%;
+}
+
+.nav-center input{
+    flex:1;
+    height:40px;
+    background:#121212;
+    border:1px solid #444;
+    color:white;
+    padding:0 15px;
+    border-radius:20px 0 0 20px;
+    outline:none;
+    font-size:16px;
+}
+
+.search-btn{
+    width:60px;
+    height:40px;
+    border:none;
+    background:#323232;
+    color:white;
+    border-radius:0 20px 20px 0;
+    cursor:pointer;
+}
+
+.mic-btn{
+    width:42px;
+    height:42px;
+    margin-left:12px;
+    border:none;
+    border-radius:50%;
+    background:#323232;
+    color:white;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    color:white;
+    font-size:26px;
+    cursor:pointer;
+}
